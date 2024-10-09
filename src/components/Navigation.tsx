@@ -1,21 +1,21 @@
 import React from 'react';
-import {navigation} from "../data/data"
+import data from "../data/data.json"
+import styles from"../styles/nav.module.css"
+import { v1 } from 'uuid'
 
-type navPropsType = {
-    title: string
-}
+const idItem = v1()
+console.log(idItem)
 
-export const Navigation = ({title}: navPropsType) => {
+export const Navigation = () => {
     return (
-        <div>
-            <h3>{title}</h3>
-            {navigation.map(el => {
+        <ul className={styles.wrapper}>
+            <h3>{data.navigationTitle[0].navTitle}</h3>
+            {data.navigationJs.map(el => {
                 return (
-                    <ul>
-                        <li><a href="">{el}</a></li>
-                    </ul>
+                    <li key={idItem}><a href={el.href}>{el.title}</a></li>
                 )
             })}
-        </div>
+        </ul>
     );
 };
+

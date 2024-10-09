@@ -1,0 +1,26 @@
+*,
+::after,
+::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari и Opera */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
