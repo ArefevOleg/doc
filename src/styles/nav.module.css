@@ -1,4 +1,69 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
+.menu {
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    height: 100%;
+    border-right: solid;
+    background-color: rgba(174, 174, 177, 0.84);
+    border-color: rgba(0, 22, 22, 0.4);
 }
+
+.menu ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menu li a:hover {
+    background-color: #ddd;
+}
+
+
+.menu > li > a {
+    text-decoration: none;
+    border-top: 1px solid #4d4e53;
+    color: black;
+    padding: 15px 30px;
+    display: block;
+    cursor: pointer;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 500px; /* Ограничение высоты */
+    overflow-y: auto; /* Добавление прокрутки */
+}
+
+
+.submenu li a {
+    background-color: #a29e9e;
+    max-width: 300px;
+    min-width: 290px;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid #4d4e53;
+}
+
+.submenu li a:hover {
+    background-color: #ddd;
+}
+
+.submenu::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari и Opera */
+}
+
+

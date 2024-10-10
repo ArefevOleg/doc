@@ -7,20 +7,26 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #000000;
-    color: white;
+html {
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+.body {
+    color: #4d4e53;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    height: 100vh;
 }
 
 body::-webkit-scrollbar {
     display: none; /* Для Chrome, Safari и Opera */
 }
 
-ul {
-    list-style: none;
-}
-
 a {
     cursor: pointer;
     text-decoration: none;
+    color: white;
 }

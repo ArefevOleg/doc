@@ -1,23 +1,22 @@
 .app {
     display: flex;
-    position: fixed;
 }
 
-.nav {
-    max-width: 300px;
-    min-width: 250px;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: rgba(174, 174, 177, 0.84);
-    border-right: solid rgba(0, 22, 22, 0.4);
-    /*border-color: rgba(0, 22, 22, 0.4);*/
-}
+/*.nav {*/
+/*    max-width: 300px;*/
+/*    min-width: 250px;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: 100%;*/
+/*    background-color: rgba(174, 174, 177, 0.84);*/
+/*    border-right: solid rgba(0, 22, 22, 0.4);*/
+/*    !*border-color: rgba(0, 22, 22, 0.4);*!*/
+/*}*/
 
-a {
-    font-size: 16px;
-    color: rgb(77, 78, 83);
-    display: block;
-    border-top: 1px solid rgb(77, 78, 83);
-    padding: 15px 30px;
-}
+/*a {*/
+/*    font-size: 16px;*/
+/*    color: rgb(77, 78, 83);*/
+/*    display: block;*/
+/*    border-top: 1px solid rgb(77, 78, 83);*/
+/*    padding: 15px 30px;*/
+/*}*/

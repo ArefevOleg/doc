@@ -1,6 +1,19 @@
-.pageWrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    color: #a29e9e;
+.main {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.title {
+    font-size: 1.9em;
+    color: black;
+}
+
+.mainSection {
+
+}
+
+.mainSection ul {
+    list-style: none;
 }
